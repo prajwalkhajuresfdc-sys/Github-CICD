@@ -1,21 +1,21 @@
 
 name: My First GitHub Action
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
   hello-job:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Welcome Message
-        run: echo "Hello Prajwal! Welcome to GitHub Actions."
+      - name: Welcome
+        run: echo "Hello Prajwal!"
 
-      - name: Print Current Date
-        run: date
+      - name: Show Directory
+        run: pwd
 
-      - name: Print Project Name
-        run: echo "Salesforce CI/CD Learning Started!"
+      - name: List Files
+        run: ls -la
+
+      - name: Success Message
+        run: echo "GitHub Actions is Working!"
